@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "stock_cli_upgrade"
+
+cli = Cli.new
+cli.call
