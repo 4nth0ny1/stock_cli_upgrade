@@ -1,7 +1,18 @@
 #!/usr/bin/env ruby
 
+require 'rake'
+require 'active_record'
+require 'yaml/store'
+require 'ostruct'
+require 'date'
+
 require "bundler/setup"
 require "stock_cli_upgrade"
+
+ActiveRecord::Base.establish_connection(
+  :adapter => "sqlite3",
+  :database => "db/stocks.sqlite"
+) 
 
 cli = Cli.new
 cli.call

@@ -1,4 +1,4 @@
-class Portfolio
+class Portfolio < ActiveRecord::Base
 
 
 end 
