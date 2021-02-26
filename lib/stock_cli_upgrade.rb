@@ -3,8 +3,8 @@ require "httparty"
 
 require "stock_cli_upgrade/version"
 
-require_relative "./stock_cli/stock"
-require_relative "./stock_cli/portfolio"
-require_relative "./stock_cli/user"
-require_relative "./stock_cli/api"
-require_relative "./stock_cli/cli"
+require_relative "./stock_cli_upgrade/stock"
+require_relative "./stock_cli_upgrade/portfolio"
+require_relative "./stock_cli_upgrade/user"
+require_relative "./stock_cli_upgrade/api"
+require_relative "./stock_cli_upgrade/cli"
